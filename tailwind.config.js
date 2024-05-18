@@ -1,4 +1,7 @@
+
+const path = require('path')
+
 module.exports = {
-    ...require('../../vendor/laravel/nova/tailwind.config'),
+    ...require(path.join(__dirname, 'vendor/laravel/nova/tailwind.config')),
     important: '.icon-action-toolbar',
 }
